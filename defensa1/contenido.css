@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    transition: all 0.5s ease;
+    cursor: pointer;
+   
+}
+  
+
+.menu-nav{
+    background-color: rgb(28, 53, 165);
+    height: 50px;
+    margin: 10px;
+    animation: backgroundChange 3s infinite;
+    
+}
+
+.slider-container p{
+    margin: auto;
+}
+.text-mosaic{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+}
+.text-content{
+    border-radius: 9px;
+    margin: 2px 0px;
+    width: 50%;
+    background-color: aqua;
+    animation: scaleUp 3s ease-in-out infinite;
+}
+.mosaic{
+    
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards{
+    display: flex;
+    min-width: 100vw;
+}
+.card{
+    min-width: 100px;
+    height: 100px;
+    background-color: blue;
+    flex-grow: 1;
+    margin: 10px 10px;
+    border-radius: 9px;
+}
+.contact-photo{
+    display: flex;
+    min-width: 100vw;
+    height: 100px;
+    gap: 5px;
+
+}
+
+.div{
+    
+    margin: 10px;
+    background-color: aqua;
+    height: 110px;
+    border-radius: 9px;
+    display: flex;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+    
+
+
+.p{
+    background-color: yellow;
+    min-width: 100%;
+    height: 120px;
+    margin: 10px;
+    animation: fontSizeChange 2s infinite;
+}
+
+.per{
+    background-color: blue;
+    min-width: 100%;
+    height: 120px;
+    margin: 10px;
+    animation: borderChange 2s infinite;
+}
+
+.mosaico{
+    margin: 10px;
+    height: 50px;
+    background-color: aqua;
+    width: 100%; 
+    gap: 10px;
+    animation: borderChange 2s infinite;
+}
+
+@keyframes fontSizeChange {
+    0% { font-size: 16px; }
+    50% { font-size: 24px; }
+    100% { font-size: 16px; }
+}
+
+@keyframes borderChange {
+    0% { border-radius: 0; }
+    50% { border-radius: 50px; }
+    100% { border-radius: 0; }
+  }
+
+
+
+@keyframes backgroundChange {
+    0% { background-color: aqua; }
+    50% { background-color: rgb(0, 255, 85); }
+    100% { background-color: blueviolet; }
+  }
+@keyframes scaleUp {
+    0% { transform: scale(0.5); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.5); }
+  }
